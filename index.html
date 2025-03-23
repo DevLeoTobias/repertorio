@@ -1,477 +1,1152 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-    <head>
-        <meta charset="utf-8" />
-        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
-        <meta name="description" content="" />
-        <meta name="author" content="" />
-        <title>Garagem do Ralphao</title>
-        <link rel="icon" type="image/x-icon" href="assets/favicon.ico" />
-        <!-- Font Awesome icons (free version)-->
-        <script src="https://use.fontawesome.com/releases/v6.3.0/js/all.js" crossorigin="anonymous"></script>
-        <!-- Google fonts-->
-        <link href="https://fonts.googleapis.com/css?family=Varela+Round" rel="stylesheet" />
-        <link href="https://fonts.googleapis.com/css?family=Nunito:200,200i,300,300i,400,400i,600,600i,700,700i,800,800i,900,900i" rel="stylesheet" />
-        <!-- Core theme CSS (includes Bootstrap)-->
-        <link href="css/styles.css" rel="stylesheet" />
-    </head>
-    <body id="page-top">
-        <!-- Navigation-->
-        <nav class="navbar navbar-expand-lg navbar-light fixed-top" id="mainNav">
-            <div class="container px-4 px-lg-5">
-                <a class="navbar-brand" href="#page-top">GARAGEM DO RALPHAO</a>                
-                <div class="collapse navbar-collapse" id="navbarResponsive">
-                    <ul class="navbar-nav ms-auto">
-                        <li class="nav-item"><a class="nav-link" href="#about">Musicas</a></li>
-                        
-                    </ul>
-                </div>
+  <head>
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+    <meta name="description" content="" />
+    <meta name="author" content="" />
+    <title>Garagem do Ralphao</title>
+    <link rel="icon" type="image/x-icon" href="assets/favicon.ico" />
+    <!-- Font Awesome icons (free version)-->
+    <script
+      src="https://use.fontawesome.com/releases/v6.3.0/js/all.js"
+      crossorigin="anonymous"
+    ></script>
+    <!-- Google fonts-->
+    <link
+      href="https://fonts.googleapis.com/css?family=Varela+Round"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css?family=Nunito:200,200i,300,300i,400,400i,600,600i,700,700i,800,800i,900,900i"
+      rel="stylesheet"
+    />
+    <!-- Core theme CSS (includes Bootstrap)-->
+    <link href="css/styles.css" rel="stylesheet" />
+  </head>
+  <body id="page-top">
+    <!-- Navigation-->
+    <nav class="navbar navbar-expand-lg navbar-light fixed-top" id="mainNav">
+      <div class="container px-4 px-lg-5">
+        <a class="navbar-brand" href="#page-top">GARAGEM DO RALPHAO</a>
+        <div class="collapse navbar-collapse" id="navbarResponsive">
+          <ul class="navbar-nav ms-auto">
+            <li class="nav-item">
+              <a class="nav-link" href="#about">Musicas</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    <!-- Masthead-->
+    <header class="masthead">
+      <div
+        class="container px-4 px-lg-5 d-flex h-100 align-items-center justify-content-center"
+      >
+        <div class="d-flex justify-content-center">
+          <div class="text-center">
+            <h1 class="mx-auto my-0 text-uppercase">GARAGEM DO RALPHAO</h1>
+            <h2 class="text-white-50 mx-auto mt-2 mb-5">
+              Repertorio de músicas
+            </h2>
+            <a class="btn btn-primary" href="#musicas">Musicas</a>
+          </div>
+        </div>
+      </div>
+    </header>
+    <!-- Musicas -->
+    <section class="projects-section bg-light pt-3" id="musicas">
+      <div class="container px-4 px-lg-5">
+        <!-- Featured Project Row-->
+        <div class="row gx-0 mb-4 mb-lg-5 align-items-center">
+          <div class="col-xl-8 col-lg-7"></div>
+          <div class="col-xl-4 col-lg-5">
+            <h2 class="text-center"><strong>Repertorio das músicas</strong></h2>
+            <div class="mb-3">
+              <input
+                type="text"
+                id="searchInput"
+                class="form-control"
+                placeholder="Buscar música..."
+                onkeyup="searchSongs()"
+              />
             </div>
-        </nav>
-        <!-- Masthead-->
-        <header class="masthead">
-            <div class="container px-4 px-lg-5 d-flex h-100 align-items-center justify-content-center">
-                <div class="d-flex justify-content-center">
-                    <div class="text-center">
-                        <h1 class="mx-auto my-0 text-uppercase"> GARAGEM DO RALPHAO</h1>
-                        <h2 class="text-white-50 mx-auto mt-2 mb-5">Repertorio de músicas</h2>
-                        <a class="btn btn-primary" href="#musicas">Musicas</a>
-                    </div>
-                </div>
+            <div class="list-group">
+              <button
+                class="list-group-item list-group-item-action"
+                onclick="toggleLyrics('song1')"
+              >
+                Insensato Destino - Almir Guineto
+              </button>
+              <div id="song1" class="d-none p-3 bg-secondary text-white">
+                <p>
+                  Ó insensato destino pra que Tanta desilusão no meu viver Eu
+                  quero apenas ser feliz Ao menos uma vez E conseguir o acalanto
+                  da paixão Fui desprezado e magoado Por alguém que abordou...
+                  meu coração Fui desprezado e magoado Por alguém que abordou...
+                  meu coração Destino porque fazes assim Tenha pena de mim Veja
+                  bem não mereço sofrer Quero apenas um dia poder Viver num mar
+                  de felicidade Com alguém que me ame de verdade, ô destino
+                  Destino porque fazes assim Tenha pena de mim Veja bem não
+                  mereço sofrer Quero apenas um dia poder Viver num mar de
+                  felicidade Com alguém que me ame de verdade Com alguém que me
+                  ame de verdade
+                </p>
+              </div>
+
+              <button
+                class="list-group-item list-group-item-action"
+                onclick="toggleLyrics('song2')"
+              >
+                Eternamente Feliz - Art Popular
+              </button>
+              <div id="song2" class="d-none p-3 bg-secondary text-white">
+                <p>
+                  Quando você passa eu só vejo você Se a lua brilha em seu rosto
+                  sou eu Seu pretendente Se as subidas não te cansam sou eu Que
+                  te carrego sem você perceber Constantemente Eu te mostro a
+                  verdade do mundo Mas você não é capaz de aceitar A felicidade
+                  Eu sei vai te tocar a luz do amor Mas se a vida te der alguém
+                  melhor que eu E se o amor vencer todos os preconceitos Que
+                  você seja feliz, feliz Seja Feliz Eternamentee
+                </p>
+              </div>
+
+              <button
+                class="list-group-item list-group-item-action"
+                onclick="toggleLyrics('song3')"
+              >
+                Ôa Ôa, Canção do Amor - Art Popular
+              </button>
+              <div id="song3" class="d-none p-3 bg-secondary text-white">
+                <p>
+                  De repente deu uma vontade de te olhar Admirar Isto é o amor A
+                  gente pensa que isso tudo pode acabar Sorte ou azar Isto é
+                  amor Ouvir uma linda canção só para relembrar Que com você
+                  mulher, bom é amar Que com você mulher, bom é amar ôaô Ôa ôa
+                  Ôa ô Ôa ôa Ôa ô O seu rosto à imensidão O vento a soprar E
+                  sentir que a emoção Vaga pelo ar Vem, vem, vem desvendar Vem,
+                  vem, vem desvendar Alma florescer Viver é sonhar ôaô
+                </p>
+              </div>
+
+              <button
+                class="list-group-item list-group-item-action"
+                onclick="toggleLyrics('song4')"
+              >
+                Falando Segredo - Art Popular
+              </button>
+              <div id="song4" class="d-none p-3 bg-secondary text-white">
+                <p>
+                  Te vejo, me olhando, com um jeitinho diferente de quem quer
+                  ficar a me provocar. Falando segredos pra amiga ao seu lado
+                  que é pra eu notar...Ah! Quem dera eu pudesse ficar com você,
+                  deixa o show acabar. Me manda um recado que eu quero seu
+                  beijo. Não dá mais pra aguentar. Quem dera eu pudesse ficar
+                  com você, deixa o show acabar. Me manda um recado que eu quero
+                  o seu beijo. Não dá mais pra aguentar. Então vem se eu ganho
+                  um beijo seu eu vou até o céu. Ai, ai, ai, ai, ai, ai, ai, ai,
+                  ai aaaai. Assim eu não aguento mais...[2x]
+                </p>
+              </div>
+
+              <button
+                class="list-group-item list-group-item-action"
+                onclick="toggleLyrics('song5')"
+              >
+                Utopia - Art Popular
+              </button>
+              <div id="song5" class="d-none p-3 bg-secondary text-white">
+                <p>
+                  UtopiaPra se dizer Que a emoção Vem depois da razão Faz o
+                  coração Morrer de paixão Renunciar alguém Só traz a dor Soma
+                  da solidão Se torna mais veloz Pro sorriso apagar Minha mente
+                  tornar Abismo de criar Amar amando amor assim Sei lá! Poder
+                  dizer que o amor É uma certeza Realidade enfim Se perde no
+                  canto calado A procura de outro Por fim É esperar por alguém
+                  Que não vem E sentir-se como outro gen Será utopia ou
+                  realidade Querer estar com alguém Que se ame assim Poder dizer
+                  que o amor É uma certeza Realidade enfim Se perde no canto
+                  calado A procura de outro Por fim É esperar por alguém Que não
+                  vem E sentir-se como outro gen Será Utopia ou realidade Querer
+                  estar com alguém Que se ame assim
+                </p>
+              </div>
+
+              <button
+                class="list-group-item list-group-item-action"
+                onclick="toggleLyrics('song6')"
+              >
+                Papel de Pão - Jorge Aragão
+              </button>
+              <div id="song6" class="d-none p-3 bg-secondary text-white">
+                <p>
+                  Eu nem sei dizer o que senti Quando eu acordei e não lhe vi
+                  Confesso que chorei Não suportei a dor É doloroso se perder um
+                  grande amor Mais alucinado eu fiquei Quando li o bilhete que
+                  encontrei Estava escrito num papel de pão Foi o que arrasou
+                  meu coração Ainda me lembro bem Estava escrito assim Não me
+                  procure nosso amor Chegou ao fim, ao fim
+                </p>
+              </div>
+
+              <button
+                class="list-group-item list-group-item-action"
+                onclick="toggleLyrics('song7')"
+              >
+                Farol das Estrelas - Belo
+              </button>
+              <div id="song7" class="d-none p-3 bg-secondary text-white">
+                <p>
+                  Os teus olhos refletem nos meus O farol das estrelas Te
+                  procuro no azul dos meus sonhos Para não perdê-la Nossa cama é
+                  um porto de amor Onde espero feliz pra revê-la Toda linda e
+                  cheia de luz Com o teu corpo de estrela É tão bonito o amor
+                  que a gente faz Tem tanta cor, tem tanta paz Nos braços da
+                  estrela cadente Como adolescente eu me dei Se o brilho da
+                  nossa verdade Durar para a eternidade A estrela da felicidade
+                  encontrei A primeira vez que eu te beijei No céu da Cidade de
+                  Neon Pulei nos teus braços, me joguei Voei, voei Voei de
+                  prazer no céu de anil Contigo ao meu lado eu vou voar Em
+                  qualquer lugar desse Brasil Te amar, te amar Os teus olhos
+                  refletem nos meus O farol das estrelas Te procuro no azul dos
+                  meus sonhos Para não perdê-la Nossa cama é um porto de amor
+                  Onde espero feliz pra revê-la Toda linda e cheia de luz Com o
+                  teu corpo de estrela É tão bonito o amor que a gente faz Tem
+                  tanta cor, tem tanta paz Nos braços da estrela cadente Como
+                  adolescente eu me dei Se o brilho da nossa verdade Durar para
+                  a eternidade A estrela da felicidade encontrei A primeira vez
+                  que eu te beijei No céu da Cidade de Neon Pulei nos teus
+                  braços, me joguei Voei, voei Voei de prazer no céu de anil
+                  Contigo ao meu lado eu vou voar Em qualquer lugar desse Brasil
+                  Te amar, te amar A primeira vez que eu te beijei (que eu te
+                  beijei) No céu da Cidade de Neon Pulei nos teus braços, me
+                  joguei Voei, voei Voei de prazer no céu de anil (no céu de
+                  anil) Contigo ao meu lado eu vou voar Em qualquer lugar desse
+                  Brasil Te amar, te amar A primeira vez que eu te beijei (que
+                  eu te beijei) No céu da Cidade de Neon (de Neon) Pulei nos
+                  teus braços, me joguei Voei, voei
+                </p>
+              </div>
+
+              <button
+                class="list-group-item list-group-item-action"
+                onclick="toggleLyrics('song8')"
+              >
+                Falsa Consideração - Jorge Aragão
+              </button>
+              <div id="song8" class="d-none p-3 bg-secondary text-white">
+                <p>
+                  Agora eu sei Que o amor que você prometeu Não foi igual ao que
+                  você me deu Era mentira o que você jurou Mas não faz mal Eu
+                  aprendi que não se deve crer Em tudo aquilo que alguém nos diz
+                  Num momento de prazer ou de amor Mas tudo bem Eu sei que um
+                  dia vai e outro vem Você ainda há de encontrar alguém Pra lhe
+                  fazer o que você me fez E aí Na hora do sufoco sei que você
+                  vai me procurar Com a mesma conversa que um dia me fez
+                  apaixonar Por alguém de uma falsa consideração E aí Você vai
+                  perceber que eu estou numa boa Que durante algum tempo fiquei
+                  sem ninguém Mas há males na vida que vêm para o bem Agora eu
+                  sei Que o amor que você prometeu Não foi igual ao que você me
+                  deu Era mentira o que você jurou Mas não faz mal Eu aprendi
+                  que não se deve crer Em tudo aquilo que alguém nos diz Num
+                  momento de prazer ou de amor Mas tudo bem Eu sei que um dia
+                  vai e outro vem Você ainda há de encontrar alguém Pra lhe
+                  fazer o que você me fez E aí Na hora do sufoco sei que você
+                  vai me procurar Com a mesma conversa que um dia me fez
+                  apaixonar Por alguém de uma falsa consideração E aí Você vai
+                  perceber que eu estou numa boa Que durante algum tempo fiquei
+                  sem ninguém Mas há males na vida que vêm para o bem E aí Você
+                  vai perceber que eu estou numa boa Que durante algum tempo
+                  fiquei sem ninguém Mas há males na vida que vêm para o bem
+                </p>
+              </div>
+
+              <button
+                class="list-group-item list-group-item-action"
+                onclick="toggleLyrics('song9')"
+              >
+                Malandro - Jorge Aragão
+              </button>
+              <div id="song9" class="d-none p-3 bg-secondary text-white">
+                <p>
+                  Malandro Eu ando querendo falar com você Você tá sabendo que o
+                  Zeca morreu? Por causa de brigas que teve com a lei Malandro
+                  Eu sei que você nem se liga pro fato De ser capoeira, moleque
+                  mulato Perdido no mundo, morrendo de amor Malandro Sou eu que
+                  te falo em nome daquela Que na passarela é porta-estandarte E
+                  lá na favela tem nome de flor Malandro Só peço favor de que
+                  tenhas cuidado As coisas não andam tão bem pro teu lado Assim
+                  você mata a Rosinha de dor Malandro
+                </p>
+              </div>
+
+              <button
+                class="list-group-item list-group-item-action"
+                onclick="toggleLyrics('song10')"
+              >
+                Cartão Postal - Exaltasamba
+              </button>
+              <div id="song10" class="d-none p-3 bg-secondary text-white">
+                <p>
+                  Como sempre distraída Te filmei, você não viu É a coisa mais
+                  bonita O seu corpo de perfil Pode parecer bobagem Um impulso
+                  infantil Meu amor, não é chantagem Mas você me seduziu Te
+                  proponho, amor Um trato, que tal se render? Eu te dou o seu
+                  retrato Mas quero você Você na foto toda nua Num banho de Lua
+                  Meu cartão postal Meu corpo deu sinal, deu sinal, deu sinal O
+                  meu desejo continua Desejando a sua Boca sensual Meu sonho
+                  real Você na foto toda nua Num banho de Lua Meu cartão postal
+                  Meu corpo deu sinal, deu sinal, deu sinal O meu desejo
+                  continua Desejando a sua Boca sensual Meu sonho real Como
+                  sempre distraída Te filmei, você não viu É a coisa mais bonita
+                  O seu corpo de perfil Pode parecer bobagem Um impulso infantil
+                  Meu amor, não é chantagem Mas você me seduziu Te proponho,
+                  amor Um trato, que tal se render? Eu te dou o seu retrato Mas
+                  quero você Você na foto toda nua Num banho de Lua Meu cartão
+                  postal Meu corpo deu sinal, deu sinal, deu sinal O meu desejo
+                  continua Desejando a sua Boca sensual Meu sonho real Você na
+                  foto toda nua Num banho de Lua Meu cartão postal Meu corpo deu
+                  sinal, deu sinal, deu sinal O meu desejo continua Desejando a
+                  sua Boca sensual Meu sonho real
+                </p>
+              </div>
+              <button
+                class="list-group-item list-group-item-action"
+                onclick="toggleLyrics('song11')"
+              >
+                E Eu Não Fui Convidado Fundo de Quintal
+              </button>
+              <div id="song11" class="d-none p-3 bg-secondary text-white">
+                <p>
+                  Eu não sou culpado meu bem Se seu novo amor tem pavor do
+                  passado Comprei camisa de seda, terno de linho importado Dei
+                  molho no bom cabelo, fiz um pisante invocado Mas você se casou
+                  e eu não fui convidado Vou lhe dizer o que eu acho Sem nenhum
+                  constrangimento Quem tem teto muito baixo Não se mete em
+                  casamento Diga pro seu novo amor Essa ele tem que saber Quero
+                  cinqüenta por cento Do investimento que eu fiz em você Eu não
+                  sou culpado meu bem Se seu novo amor tem pavor do passado
+                  Comprei camisa de seda, terno de linho importado Dei molho no
+                  bom cabelo, fiz um pisante invocado Mas você se casou e eu não
+                  fui convidado Vou lhe dizer o ditado Do meu tempo de garoto
+                  Quem tem cabra que segure Porque o meu bicho tá solto Diga pro
+                  seu novo amor Que ele é um tremendo pastel Quero um pedaço do
+                  bolo Se não vai dar rolo essa lua-de-mel Eu não sou culpado
+                  meu bem Se seu novo amor tem pavor do passado Comprei camisa
+                  de seda, terno de linho importado Dei molho no bom cabelo, fiz
+                  um pisante invocado Mas você se casou e eu não fui convidado
+                  Vou lhe dizer outra coisa Sem ter medo de resposta Quem teme
+                  águas passadas Não nada em rio de costas Diga pro seu novo
+                  amor Que eu não fui e não gostei Ninguém vai cortar a fita Da
+                  obra bonita que eu inaugurei Eu não sou culpado meu bem Se seu
+                  novo amor tem pavor do passado Comprei camisa de seda, terno
+                  de linho importado Dei molho no bom cabelo, fiz um pisante
+                  invocado Mas você se casou e eu não fui convidado
+                </p>
+              </div>
+              <button
+                class="list-group-item list-group-item-action"
+                onclick="toggleLyrics('song12')"
+              >
+                Vergonha na Cara - Grupo Ginga Pura
+              </button>
+              <div id="song12" class="d-none p-3 bg-secondary text-white">
+                <p>
+                  Eu preciso dela Só penso nela A cada segundo A vida sem ela É
+                  uma janela De costas pro mundo Ela foi embora E eu estou certo
+                  Que a culpa foi minha Por nunca ter dado Muito valor A mulher
+                  que eu tinha Agora eu choro tanto E o pranto Não para Eu devo
+                  estar tomando vergonha na cara Vou ligar pra ela e vou dizer
+                  Amo você Volta logo Que eu não quero mais sofrer Eu preciso
+                  dela Só penso nela A cada segundo A vida sem ela É uma janela
+                  De costas pro mundo Ela foi embora E eu estou certo Que a
+                  culpa foi minha Por nunca ter dado Muito valor A mulher que eu
+                  tinha Agora eu choro tanto E o pranto Não para Eu devo estar
+                  tomando vergonha na cara Vou ligar pra ela e vou dizer Amo
+                  você Volta logo Que eu não quero mais sofrer
+                </p>
+              </div>
+              <button
+                class="list-group-item list-group-item-action"
+                onclick="toggleLyrics('song13')"
+              >
+                Só Pra Contrariar Fundo de Quintal
+              </button>
+              <div id="song13" class="d-none p-3 bg-secondary text-white">
+                <p>
+                  Só pra contrariar Eu não fui mais na favela Só pra contrariar
+                  Não desfilei na Portela Só pra contrariar Pus a cara na janela
+                  Só pra contrariar Eu não fiz amor com ela Contrariei, sabendo
+                  que ainda era a mais bela E tinha malandro ligado na dela Que
+                  nunca deu bola, que nunca deu trela Contrariei, revelando
+                  segredo que não se revela Só pra contrariar, ela ainda é
+                  donzela Só pra contrariar Eu não fui mais na favela Só pra
+                  contrariar Não desfilei na Portela Só pra contrariar Pus a
+                  cara na janela Só pra contrariar Eu não fiz amor com ela
+                  Contrariei, e acho que dei um bico na canela Desprezando o que
+                  todo o mundo zela Como tufo, jóia, escultura ou tela
+                  Contrariei, mas essa castidade abri a fivela Só pra
+                  contrariar. ela ainda é donzela Só pra contrariar Eu não fui
+                  mais na favela Só pra contrariar Não desfilei na Portela Só
+                  pra contrariar Pus a cara na janela Só pra contrariar Eu não
+                  fiz amor com ela
+                </p>
+              </div>
+              <button
+                class="list-group-item list-group-item-action"
+                onclick="toggleLyrics('song14')"
+              >
+                Seja Mais Você Grupo Raça
+              </button>
+              <div id="song14" class="d-none p-3 bg-secondary text-white">
+                <p>
+                  Se o teu amor fosse maior Melhor seria o teu viver E esquecer
+                  o amor menor Seria fácil pra você E aquela dor que hoje ainda
+                  te alucina E faz temer a vida Se alguém viesse perguntar Você
+                  iria responder Ela já foi esquecida Se alguém viesse perguntar
+                  Você iria responder Ela já foi esquecida No teu coração
+                  habitaria a paz E a tua paixão sempre querendo mais Quando se
+                  é feliz A gente só pensa em amar É o teu desejo quem diz Que o
+                  teu grande amor ainda pode aumentar Então se fechar pra que?
+                  Seja mais você Peço por favor Solte o seu amor Pra sorrir
+                  depois E pra ser sincero tudo o que mais quero É enfim nós
+                  dois Então se fechar pra que? Seja mais você Peço por favor
+                  Solte o teu amor Pra sorrir depois E pra ser sincero tudo que
+                  mais quero É enfim nós dois No teu coração habitaria a paz E a
+                  tua paixão sempre querendo mais Quando se é feliz A gente só
+                  pensa em amar É o teu desejo quem diz Que o teu grande amor
+                  ainda pode aumentar Então se fechar pra que? Seja mais você
+                  Peço por favor Solte o seu amor Pra sorrir depois E pra ser
+                  sincero tudo o que mais quero É enfim nós dois Laia lalaia
+                  laia Lalaia laia La laia laia Lalaia laia La laia laia E pra
+                  ser sincero tudo que mais quero É enfim nós dois É enfim nós
+                  dois
+                </p>
+              </div>
+              <button
+                class="list-group-item list-group-item-action"
+                onclick="toggleLyrics('song15')"
+              >
+                Te Amo Grupo Raça
+              </button>
+              <div id="song15" class="d-none p-3 bg-secondary text-white">
+                <p>
+                  Eu sei Que eu te amo demais amor É verdade eu não sei mentir
+                  Ta na cara e no coração Ta no beijo e no teu calor Hoje eu
+                  ando feliz demais Vou sorrindo vivendo em paz Meu amor, meu
+                  amor Talvez Amanhã quando o sol brilhar Eu consiga te prometer
+                  Todo dia te acordar Toda noite amar você E pra sempre viver em
+                  paz Te fazendo feliz demais Meu amor, meu amor Eu sei É amor e
+                  não é paixão Meu bem Ta no fundo do coração Só quero te dizer
+                  Preciso de você Te amo, te amo
+                </p>
+              </div>
+              <button
+                class="list-group-item list-group-item-action"
+                onclick="toggleLyrics('song16')"
+              >
+                Falsa Consideração Jorge Aragão
+              </button>
+              <div id="song16" class="d-none p-3 bg-secondary text-white">
+                <p>
+                  Agora eu sei Que o amor que você prometeu Não foi igual ao que
+                  você me deu Era mentira o que você jurou Mas não faz mal Eu
+                  aprendi que não se deve crer Em tudo aquilo que alguém nos diz
+                  Num momento de prazer ou de amor Mas tudo bem Eu sei que um
+                  dia vai e outro vem Você ainda há de encontrar alguém Pra lhe
+                  fazer o que você me fez E aí Na hora do sufoco sei que você
+                  vai me procurar Com a mesma conversa que um dia me fez
+                  apaixonar Por alguém de uma falsa consideração E aí Você vai
+                  perceber que eu estou numa boa Que durante algum tempo fiquei
+                  sem ninguém Mas há males na vida que vêm para o bem Agora eu
+                  sei Que o amor que você prometeu Não foi igual ao que você me
+                  deu Era mentira o que você jurou Mas não faz mal Eu aprendi
+                  que não se deve crer Em tudo aquilo que alguém nos diz Num
+                  momento de prazer ou de amor Mas tudo bem Eu sei que um dia
+                  vai e outro vem Você ainda há de encontrar alguém Pra lhe
+                  fazer o que você me fez E aí Na hora do sufoco sei que você
+                  vai me procurar Com a mesma conversa que um dia me fez
+                  apaixonar Por alguém de uma falsa consideração E aí Você vai
+                  perceber que eu estou numa boa Que durante algum tempo fiquei
+                  sem ninguém Mas há males na vida que vêm para o bem E aí Você
+                  vai perceber que eu estou numa boa Que durante algum tempo
+                  fiquei sem ninguém Mas há males na vida que vêm para o bem
+                </p>
+              </div>
+              <button
+                class="list-group-item list-group-item-action"
+                onclick="toggleLyrics('song17')"
+              >
+                Perdoa Leci Brandão
+              </button>
+              <div id="song17" class="d-none p-3 bg-secondary text-white">
+                <p>
+                  Muita calma nessa hora, hein! Estou sofrendo, te querendo Não
+                  dá mais pra controlar Essa dor que me invade Dá vontade de te
+                  amar Estou quase enlouquecendo Você não quer perdoar Sei que
+                  estou te perdendo Impossível aceitar Se te machuquei amor,
+                  perdoa! Não sentir o teu calor, magoa! Volta aí vamos ficar,
+                  na boa! Nunca mais vamos brigar, à toa! Se te machuquei amor,
+                  perdoa! Não sentir o teu calor, magoa! Volta aí vamos ficar,
+                  na boa! Nunca mais vamos brigar, à toa! Já tentei te esquecer
+                  Mas meu coração não quis Nada mais me dá prazer Só com você eu
+                  sou feliz Já tentei te esquecer Mas meu coração não quis Nada
+                  mais me dá prazer Só com você eu sou feliz Estou sofrendo, te
+                  querendo Não dá mais pra controlar Essa dor que me invade Dá
+                  vontade de te amar Estou quase enlouquecendo Você não quer
+                  perdoar Sei que estou te perdendo Impossível aceitar Se te
+                  machuquei amor, perdoa! Não sentir o teu calor, magoa! Volta
+                  aí vamos ficar, na boa! Nunca mais vamos brigar, à toa! Se te
+                  machuquei amor, perdoa! Não sentir o teu calor, magoa! Volta
+                  aí vamos ficar, na boa! Nunca mais vamos brigar, à toa! Já
+                  tentei te esquecer Mas meu coração não quis Nada mais me dá
+                  prazer Só com você eu sou feliz Já tentei te esquecer Mas meu
+                  coração não quis Nada mais me dá prazer Só com você eu sou
+                  feliz
+                </p>
+              </div>
+              <button
+                class="list-group-item list-group-item-action"
+                onclick="toggleLyrics('song18')"
+              >
+                Ex-Amor Martinho da Vila
+              </button>
+              <div id="song18" class="d-none p-3 bg-secondary text-white">
+                <p>
+                  Ex-amor Gostaria que tu soubesses O quanto que eu sofri Ao ter
+                  que me afastar de ti Não chorei Não chorei Como um louco eu
+                  até sorri Mas no fundo só eu sei Das angústias que senti
+                  Sempre sonhamos Com o mais eterno amor Infelizmente, eu
+                  lamento Mas não deu Nos desgastamos Transformando tudo em dor
+                  Mas mesmo assim Eu acredito que valeu Quando a saudade bate
+                  forte É envolvente Eu me possuo e é na sua intenção Com a
+                  minha cuca Naqueles momentos quentes Em que se acelerava o meu
+                  coração (vem comigo, vai!) Ex-amor Gostaria que tu soubesses O
+                  quanto que eu sofri Ao ter que me afastar de ti Não chorei Não
+                  chorei Como um louco eu até sorri Mas no fundo só eu sei Das
+                  angústias que senti Sempre sonhamos Com o mais eterno amor
+                  Infelizmente, eu lamento Mas não deu Nos desgastamos
+                  Transformando tudo em dor Mas mesmo assim Eu acredito que
+                  valeu (valeu!) Quando a saudade bate forte É envolvente Eu me
+                  possuo e é na sua intenção Com a minha cuca Naqueles momentos
+                  quentes Em que se acelerava o meu coração Ex-amor Ex-amor
+                  Gostaria que tu soubesses O quanto que eu sofri Ao ter que me
+                  afastar de ti Não chorei Não chorei Como um louco eu até sorri
+                  Mas no fundo só eu sei Das angústias que senti Valeu gente!
+                </p>
+              </div>
+              <button
+                class="list-group-item list-group-item-action"
+                onclick="toggleLyrics('song19')"
+              >
+                Melhor Eu Ir Péricles
+              </button>
+              <div id="song19" class="d-none p-3 bg-secondary text-white">
+                <p>
+                  Melhor eu ir Tudo bem, vai ser melhor só Se teve que ser assim
+                  É que pensando bem, nunca existiu nós Só eu que pensei na
+                  gente Ainda que demorei pra terminar, dói Não era só comigo
+                  que você ficava Foi tão difícil ter que enxergar Que tudo isso
+                  foi ilusão Todo esse tempo eu perdi em vão É difícil ter que
+                  aceitar Meu coração, ele não deixa não Se faz de bobo, não tem
+                  jeito não Só a vida pode explicar Que talvez a gente se
+                  encontrou na hora errada Eu pensando em amor, você pensando
+                  madrugada E agora a gente não consegue dizer nada Vim dizer
+                  adeus Talvez a gente se perdeu pelo caminho Mesmo do seu lado,
+                  eu me sinto tão sozinho E agora a gente não consegue dizer
+                  nada Além do que adeus Melhor eu ir, tchau Melhor o final,
+                  melhor assim Assim, melhor pra mim E pra você também Melhor eu
+                  ir, tchau Melhor o final, melhor assim Assim, melhor pra mim
+                  Não era só comigo que você ficava Foi tão difícil ter que
+                  enxergar Que tudo isso foi ilusão Todo esse tempo eu perdi em
+                  vão É difícil ter que aceitar Meu coração, ele não deixa não
+                  Se faz de bobo, não tem jeito não Só a vida pode, pode
+                  explicar Que talvez a gente se encontrou na hora errada Eu
+                  pensando em amor, você pensando madrugada E agora a gente não
+                  consegue dizer nada Vim dizer adeus Talvez a gente se perdeu
+                  pelo caminho Mesmo do seu lado, eu me sinto tão sozinho E
+                  agora a gente não consegue dizer nada Eu vim dizer adeus
+                  Melhor eu ir, tchau Melhor o final, melhor assim Assim Melhor
+                  eu ir, tchau Melhor o final, melhor assim Assim, melhor pra
+                  mim
+                </p>
+              </div>
+              <button
+                class="list-group-item list-group-item-action"
+                onclick="toggleLyrics('song20')"
+              >
+                Gente da Gente Negritude Junior
+              </button>
+              <div id="song20" class="d-none p-3 bg-secondary text-white">
+                <p>
+                  Esse samba é pra gente da gente Que vive a pegar no batente
+                  Com sol ou com chuva ou doente Sabe que tem que trabalhar Esse
+                  povo merece uma medalha Porque nunca foge da batalha Essa
+                  gente da gente não dá falha Porque não tem fã de canalha Essa
+                  gente é na gente que crê Negritude é lição de viver Juventude
+                  drogada pra quê? Ai meu Deus, o que posso fazer? Essa gente já
+                  sofre demais São tratados como animais E só querem um
+                  pouquinho de paz E precisam ouvir Racionais!
+                </p>
+              </div>
+              <button
+                class="list-group-item list-group-item-action"
+                onclick="toggleLyrics('song21')"
+              >
+                Brilho de Cristal Grupo Pixote
+              </button>
+              <div id="song21" class="d-none p-3 bg-secondary text-white">
+                <p>
+                  É o brilho do seu olhar Que me leva a loucura Pode ser minha
+                  cura Essa febre de amar Faz o que quer de mim Faz um bem faz
+                  um mal Nosso amor será sempre assim Um brilho de cristal Quem
+                  me dera ao menos uma vez poder te abraçar e te beijar Bem
+                  pertinho desvendar o brilho desse olhar Que ilumina minha vida
+                  Triste vida sem você não sou ninguém Vem cá me dá Me dá você
+                  meu bem Porque ando tão sozinho Precisando de carinho Juro por
+                  Deus, jamais amei assim É desejo demais Vem pra ser minha paz
+                  Abre o seu coração Vem pra mim
+                </p>
+              </div>
+              <button
+                class="list-group-item list-group-item-action"
+                onclick="toggleLyrics('song22')"
+              >
+                Faixa Amarela Zeca Pagodinho
+              </button>
+              <div id="song22" class="d-none p-3 bg-secondary text-white">
+                <p>
+                  Eu quero presentear A minha linda donzela Não é prata, nem é
+                  ouro É uma coisa bem singela Vou comprar uma faixa amarela
+                  Bordada com o nome dela E vou mandar pendurar Na entrada da
+                  favela Vou comprar uma faixa amarela Bordada com o nome dela E
+                  vou mandar pendurar Na entrada da favela Eu quero presentear A
+                  minha linda donzela Não é prata, nem é ouro É uma coisa bem
+                  singela Vou comprar uma faixa amarela Bordada com o nome dela
+                  E vou mandar pendurar Na entrada da favela Vou comprar uma
+                  faixa amarela Bordada com o nome dela E vou mandar pendurar Na
+                  entrada da favela Vou dar-lhe um gato angorá Um cão e uma
+                  cadela Uma cortina grená Para enfeitar a janela Sem falar na
+                  tal faixa amarela Bordada com o nome dela Que eu vou mandar
+                  pendurar Na entrada da favela Sem falar na tal faixa amarela
+                  Bordada com o nome dela Que eu vou mandar pendurar Na entrada
+                  da favela E para o nosso papá Vai ter bife da panela Salada de
+                  petit pois Jiló, chuchu e berinjela Sem falar na tal faixa
+                  amarela Bordada com o nome dela Que eu vou mandar pendurar Na
+                  entrada da favela Sem falar na tal faixa amarela Bordada com o
+                  nome dela Que eu vou mandar pendurar Na entrada da favela Eu
+                  quero presentear A minha linda donzela Não é prata, nem é ouro
+                  É uma coisa bem singela Vou comprar uma faixa amarela Bordada
+                  com o nome dela E vou mandar pendurar Na entrada da favela Vou
+                  comprar uma faixa amarela Bordada com o nome dela E vou mandar
+                  pendurar Na entrada da favela Mas se ela vacilar Vou dar um
+                  castigo nela Dá-lhe uma banda de frente Quebrar cinco dentes e
+                  quatro costelas Vou pegar a tal faixa amarela Bordada com o
+                  nome dela E mandar incendiar Na entrada da favela Vou pegar a
+                  tal faixa amarela Bordada com o nome dela E mandar incendiar
+                  Na entrada da favela Vou fazer dela rainha Do desfile da
+                  Portela Eu vou ser filho do rei E ela minha Cinderela Sem
+                  falar na tal faixa amarela Bordada com o nome dela Que eu vou
+                  mandar pendurar Na entrada da favela Sem falar na tal faixa
+                  amarela Bordada com o nome dela Que eu vou mandar pendurar Na
+                  entrada da favela Eu quero presentear A minha linda donzela
+                  Não é prata, nem é ouro É uma coisa bem singela Vou comprar
+                  uma faixa amarela Bordada com o nome dela E vou mandar
+                  pendurar Na entrada da favela Vou comprar uma faixa amarela
+                  Bordada com o nome dela E vou mandar pendurar Na entrada da
+                  favela
+                </p>
+              </div>
+              <button
+                class="list-group-item list-group-item-action"
+                onclick="toggleLyrics('song23')"
+              >
+                Seu Balancê Zeca Pagodinho
+              </button>
+              <div id="song23" class="d-none p-3 bg-secondary text-white">
+                <p>
+                  Quando o canto da sereia Reluziu no seu olhar Acertou na minha
+                  veia Conseguiu me enfeitiçar Tem veneno o seu perfume Que me
+                  faz o seu refém Seu sorriso tem um lume Que nenhuma estrela
+                  tem Tô com medo desse doce Tô comendo em sua mão Nunca
+                  imaginei que fosse Mergulhar na tentação Essa boca que me
+                  beija Me enlouquece de paixão Te entreguei numa bandeja A
+                  chave do meu coração Seu tempero me deixa bolado É um mel
+                  misturado com dendê No seu colo eu me embalo, eu me embolo Até
+                  numa casinha de sapê Como é lindo o bailado debaixo dessa sua
+                  saia godê Quando roda no bamba querer Fazendo um fuzuê Minha
+                  deusa, esse seu encanto parece que veio do Ilê Ou será de um
+                  jogo de jongo que fica no Colubandê? Eu só sei que o som do
+                  batuque é um truque do seu balancê Preta, cola comigo porque
+                  Tô amando você Quando o canto da sereia Reluziu no seu olhar
+                  Acertou na minha veia Conseguiu me enfeitiçar Tem veneno o seu
+                  perfume Que me faz o seu refém Seu sorriso tem um lume Que
+                  nenhuma estrela tem Tô com medo desse doce Tô comendo em sua
+                  mão Nunca imaginei que fosse Mergulhar na tentação Essa boca
+                  que me beija Me enlouquece de paixão Te entreguei numa bandeja
+                  A chave do meu coração Seu tempero me deixa bolado É um mel
+                  misturado com dendê No seu colo eu me embalo, eu me embolo Até
+                  numa casinha de sapê Como é lindo o bailado debaixo dessa sua
+                  saia godê Quando roda no bamba querer Fazendo um fuzuê Minha
+                  deusa, esse seu encanto parece que veio do Ilê Ou será de um
+                  jogo de jongo que fica no Colubandê? Eu só sei que o som do
+                  batuque é um truque do seu balancê Preta, cola comigo porque
+                  Tô amando você Preta, cola comigo porque Tô amando você Tô
+                  amando você
+                </p>
+              </div>
+              <button
+                class="list-group-item list-group-item-action"
+                onclick="toggleLyrics('song24')"
+              >
+                Trovão Dilsinho
+              </button>
+              <div id="song24" class="d-none p-3 bg-secondary text-white">
+                <p>
+                  Louco pra te amar Chego pro jantar E a mesa pra um Ver você
+                  chorar Roupas no sofá Sem motivo algum Quando eu perguntei pra
+                  onde é que eu ia Desacreditei Foi tão fria Nem me ouvia Só
+                  dizia vai E que já não dava mais Como não? Se é separação De
+                  onde é o trovão, que anuncia quando a chuva vem? Hoje eu saí
+                  sem me despedir Só porque eu achei que estava tudo bem! Não me
+                  leve a mal Brigas de casal, como as nossas todo mundo tem Se é
+                  pra te esquecer como eu vou viver Se eu só tenho você e mais
+                  ninguém Não tenho nada além de amor pra te dar Mas trouxe
+                  flores se quiser ficar! Quando eu perguntei pra onde é que eu
+                  ia Desacreditei Foi tão fria Nem me ouvia Só dizia vai E que
+                  já não dava mais Como não? Se é separação De onde é o trovão,
+                  que anuncia quando a chuva vem? Hoje eu saí sem me despedir Só
+                  porque eu achei que estava tudo bem! Não me leve a mal Brigas
+                  de casal, como as nossas todo mundo tem Se é pra te esquecer
+                  como eu vou viver Se eu só tenho você e mais ninguém Não tenho
+                  nada além de amor pra te dar Mas trouxe flores se quiser ficar
+                  Se é separação De onde é o trovão, que anuncia quando a chuva
+                  vem? Hoje eu saí sem me despedir Só porque eu achei que estava
+                  tudo bem! Não me leve a mal Brigas de casal, como as nossas
+                  todo mundo tem Se é pra te esquecer como eu vou viver Se eu só
+                  tenho você e mais ninguém Não tenho nada além de amor pra te
+                  dar Mas trouxe flores se quiser ficar Mas trouxe flores se
+                  quiser ficar Mas trouxe flores se quiser ficar
+                </p>
+              </div>
+              <button
+                class="list-group-item list-group-item-action"
+                onclick="toggleLyrics('song25')"
+              >
+                24 Horas de Amor Exaltasamba
+              </button>
+              <div id="song25" class="d-none p-3 bg-secondary text-white">
+                <p>
+                  Amor amigo Não sei porque ê ê, ê Fugiu de mim Sem me dizer Pra
+                  onde foi Cadê você? Eu te procuro (Sem rancor..) Mas não te
+                  vejo (Onde for) É muito duro É inseguro O meu desejo... É te
+                  amar (É te amar!) É te querer (É te querer!) 24 horas sem
+                  cessar Meu grande amor Longe de ti (Não sei sorrir!) Sinto Até
+                  saudades de mim Diga que não Chegou ao fim... É te amar (É te
+                  amar!) É te querer (É te querer) 24 horas sem cessar Meu
+                  grande amor Longe de ti (Não sei sorrir) Sinto Até saudades de
+                  mim... Amor amigo Não sei porquê, ê, ê Fugiu de mim Sem me
+                  dizer Pra onde foi Cadê você?... Eu te procuro (Sem rancor!)
+                  Mas não te vejo (Onde vou!) É muito duro É inseguro O meu
+                  desejo... É te amar (É te amar!) É te querer (É te querer!) 24
+                  horas sem cessar Meu grande amor Longe de ti (Não sei sorrir!)
+                  Sinto Até saudades de mim Diga que não Chegou ao fim... É te
+                  amar (É te amar!) É te querer (É te querer) 24 horas sem
+                  cessar Meu grande amor Longe de ti (Não sei sorrir) Sinto Até
+                  saudades de mim... Láia, Láia, Láia, Láia.. 24 horas sem
+                  cessar Meu grande amor Longe de ti (Não sei sorrir) Sinto Até
+                  saudades de mim...
+                </p>
+              </div>
+              <button
+                class="list-group-item list-group-item-action"
+                onclick="toggleLyrics('song26')"
+              >
+                Anjo Meu Exaltasamba
+              </button>
+              <div id="song26" class="d-none p-3 bg-secondary text-white">
+                <p>
+                  Anjo meu, Eu sou aprendiz desse grande amor Sei que errando
+                  posso acertar. Sonho em te abraçar, Te mostrar nosso mundo
+                  Todo o amor que eu possa te dar. Até te mandei um cartão (Mas
+                  não leu) Só pra chamar sua atenção (Mas não deu) Agora o que
+                  eu posso fazer? Se meu pensamento é você Anjinho cê tem que
+                  saber Depois do dia em que te conheci Teu lindo olhar eu
+                  jamais esqueci (Anjo meu preciso de você) Eu quero te convidar
+                  pra dançar Ando nas nuvens só de imaginar (Anjo meu preciso de
+                  você) (2x)
+                </p>
+              </div>
+              <button
+                class="list-group-item list-group-item-action"
+                onclick="toggleLyrics('song27')"
+              >
+                Pétalas de Rosas Art Popular
+              </button>
+              <div id="song27" class="d-none p-3 bg-secondary text-white">
+                <p>
+                  Derererê, derererê, art ãh ãh Derererê, derererê, art ãh ãh
+                  Derererê, derererê, art ãh ãh Derererê, derererê, (ãh ãh, ah!)
+                  Desejo de amor eu vou te amar Até o amanhecer É linda a nossa
+                  história, ah ah, ah ah Desejo de amante eu quero dar O mundo
+                  pra você Em pétalas de rosas, ah ah, ah ah E quem falou que
+                  não existe um amor Mentiu pro coração A vida é cheia de
+                  paixão, ah ah, ah ah E quem falou que não consegue mais amar
+                  Se engana outra outra vez Olhando pra você, ah ah, ah ah, ah
+                  ah Me abraça E tira esse nó do peito Se apaixonar não é
+                  defeito E amar não é dizer adeus Derererê, derererê E amar não
+                  é dizer adeus Derererê, derererê
+                </p>
+              </div>
+              <button
+                class="list-group-item list-group-item-action"
+                onclick="toggleLyrics('song28')"
+              >
+                Percepção Art Popular
+              </button>
+              <div id="song28" class="d-none p-3 bg-secondary text-white">
+                <p>
+                  É linda essa relação Que envolve meu coração Cansado já de
+                  sofrer A ponto de enlouquecer Pensei que voltar atrás Seria a
+                  solução Por que fui me apaixonar Falhei na percepção Seu jeito
+                  judia de mim Dengosa como um querubim Com tantos delírios de
+                  amor É na vida Seu jeito judia de mim Dengosa como um querubim
+                  Com tantos delírios de amor Assim Então vem Vem pra me amar,
+                  (vem pra me amar) Sem você não dá, (sem você não dá) Pra viver
+                  feliz É como o ditado diz Água em pedra pra furar Tem que
+                  insistir (que insistir, que insistir, insistir...)
+                </p>
+              </div>
+              <button
+                class="list-group-item list-group-item-action"
+                onclick="toggleLyrics('song29')"
+              >
+                Falando Segredo Exaltasamba
+              </button>
+              <div id="song29" class="d-none p-3 bg-secondary text-white">
+                <p>
+                  Te vejo me olhando Com jeitinho diferente De quem quer ficar A
+                  me provocar Falando segredo pra amiga ao seu lado Que é pra eu
+                  notar, ah! Quem dera eu pudesse ficar com você Deixa o show
+                  acabar Me manda um recado que eu quero seu beijo Não dá mais
+                  pra aguentar Quem dera eu pudesse ficar com você Deixa o show
+                  acabar Me manda um recado que eu quero seu beijo Não dá mais
+                  pra agüentar Então vem Se eu ganho um beijo seu eu vou até o
+                  céu Ai, ai, ai, ai, ai, ai, ai Assim eu não agüento mais Então
+                  vem Se eu ganho um beijo seu eu vou até o céu Ai, ai, ai, ai,
+                  ai, ai, ai Assim eu não agüento mais Então vem Te vejo me
+                  olhando Com jeitinho diferente De quem quer ficar A me
+                  provocar Falando segredo pra amiga ao seu lado Que é pra eu
+                  notar, ah! Quem dera eu pudesse ficar com você Deixa o show
+                  acabar Me manda um recado que eu quero seu beijo Não dá mais
+                  pra aguentar Quem dera eu pudesse ficar com você Deixa o show
+                  acabar Me manda um recado que eu quero seu beijo Não dá mais
+                  pra agüentar Então vem Se eu ganho um beijo seu eu vou até o
+                  céu Ai, ai, ai, ai, ai, ai, ai Assim eu não agüento mais Então
+                  vem Se eu ganho um beijo seu eu vou até o céu Ai, ai, ai, ai,
+                  ai, ai, ai Assim eu não agüento mais Então vem
+                </p>
+              </div>
+              <button
+                class="list-group-item list-group-item-action"
+                onclick="toggleLyrics('song30')"
+              >
+                Do Jeito Que a Vida Quer Grupo Revelação
+              </button>
+              <div id="song30" class="d-none p-3 bg-secondary text-white">
+                <p>
+                  Ninguém sabe a mágoa que trago no peito Quem me vê sorrir
+                  desse jeito Nem sequer sabe da minha solidão É que meu samba
+                  me ajuda na vida Minha dor vai passando, esquecida Vou vivendo
+                  essa vida do jeito que ela me levar Vamos falar de mulher, da
+                  morena e dinheiro Do batuque do surdo e até do pandeiro Mas
+                  não fale da vida, que você não sabe O que eu já passei Moço,
+                  aumenta esse samba que o verso não para Batuque mais forte, a
+                  tristeza se cala Eu levo essa vida do jeito que ela me levar É
+                  do jeito que a vida quer É desse jeito
+                </p>
+              </div>
+              <button
+                class="list-group-item list-group-item-action"
+                onclick="toggleLyrics('song31')"
+              >
+                Retrato Cantado de Um Amor Reinaldo
+              </button>
+              <div id="song31" class="d-none p-3 bg-secondary text-white">
+                <p>
+                  Veja bem, nosso amor é perfeito Pois até nos defeitos Sabemos
+                  nos superar Lembro sim, maus momentos passamos Mesmo assim
+                  suplantamos por confiar Toda vez que converso Com meu coração,
+                  vejo a luz Me sinto como um pecador Aos pés da cruz a
+                  confessar Este amor frutifica A cada instante em mim Me dando
+                  a certeza constante Que não vai chegar ao fim É que o teu
+                  calor tem grande fulgor E excita o meu corpo Tem lampejo de
+                  inspiração E conduz ao espaço, seduzindo a razão E além do
+                  mais, me julgo incapaz De viver um desamor Pra finalizar,
+                  resumindo essa história Este é o retrato cantado Que vem
+                  ratificar um grande amor
+                </p>
+              </div>
+
+              <button
+                class="list-group-item list-group-item-action"
+                onclick="toggleLyrics('song32')"
+              >
+                Coladinho Grupo Revelação
+              </button>
+              <div id="song32" class="d-none p-3 bg-secondary text-white">
+                <p>
+                  Eu catuquei teu sono Sonho de amor Me apaixonei de vez Te amei
+                  demais E me joguei aos teus pés Eu sei que tanto fiz pra te
+                  fazer feliz Mas teu amor não foi E nem será Completamente meu
+                  Jamais foi meu Você gostou de mim Fingi me amar, eu finjo
+                  acreditar Não me acorde desse sonho lindo Sonhando, eu vou
+                  poder te amar em paz Coladinho, agarradinho Bem juntinho de
+                  você Me beije e não me deixe nunca mais, nunca mais Você
+                  merece todo o meu carinho Seu jeitinho enlouquece o coração
+                  Coladinho, agarradinho Bem juntinho de você Você me dá prazer
+                  e emoção
+                </p>
+              </div>
+              <button
+                class="list-group-item list-group-item-action"
+                onclick="toggleLyrics('song33')"
+              >
+                Esqueci de Te Esquecer Grupo Revelação
+              </button>
+              <div id="song33" class="d-none p-3 bg-secondary text-white">
+                <p>
+                  Quando acabou nosso romance O meu mundo desabou A solidão me
+                  abrigou Sofri sem você Sei que não quis dizer adeus Eu vi no
+                  seu olhar Que está infeliz E tenta disfarçar Só faz se magoar
+                  Ouça, meu bem Não deixa a chama da paixão se apagar Pro nosso
+                  bem Esqueça tudo que passou Eu sei que não é o fim Seu corpo
+                  me chama Escute a voz do seu coração A voz da razão Não sei
+                  viver Sem teu amor, sem teu abraço Só você me dá prazer Te
+                  quero do meu lado, custe o que custar Eu amo você
+                  Sinceramente, eu esqueci de te esquecer Chega de sofrer
+                  Orgulho não nos leva a nada, pode crer
+                </p>
+              </div>
+              <button
+                class="list-group-item list-group-item-action"
+                onclick="toggleLyrics('song34')"
+              >
+                A Batucada dos Nossos Tantãs Fundo de Quintal
+              </button>
+              <div id="song34" class="d-none p-3 bg-secondary text-white">
+                <p>
+                  Samba, a gente não perde o prazer de cantar E fazem de tudo
+                  pra silenciar A batucada dos nossos tantãs No seu ecoar, o
+                  samba se refez Seu canto se faz reluzir Podemos sorrir outra
+                  vez Samba, eterno delírio do compositor Que nasce da alma, sem
+                  pele, sem cor Com simplicidade, não sendo vulgar Fazendo da
+                  nossa alegria, seu habitat natural O samba floresce do fundo
+                  do nosso quintal Este samba é pra você Que vive a falar, a
+                  criticar Querendo esnobar, querendo acabar Com a nossa cultura
+                  popular É bonito de se ver O samba correr, pro lado de lá
+                  Fronteira não há, pra nos impedir Você não samba mas tem que
+                  aplaudir
+                </p>
+              </div>
+              <button
+                class="list-group-item list-group-item-action"
+                onclick="toggleLyrics('song35')"
+              >
+                Domingo Só Pra Contrariar (SPC)
+              </button>
+              <div id="song35" class="d-none p-3 bg-secondary text-white">
+                <p>
+                  Domingo quero te encontrar E desabafar todo o meu sofrer Estar
+                  ao teu lado, esquecer de tudo Tudo que o amor até hoje nos fez
+                  sofrer Esquecer a briga que deixou ferida E que até hoje não
+                  cicatrizou Te amar de novo faz parte da vida Abre o coração,
+                  tudo tem sentido e tem razão Cola o teu rosto no meu Chega
+                  mais perto de mim Faça de conta que eu sou teu namorado Amar
+                  você é bom demais É tudo que eu posso querer Se tudo você tem
+                  melhor Pior é te perder Cola o teu rosto no meu Chega mais
+                  perto de mim Faça de conta que eu sou teu namorado Amar você é
+                  bom demais É tudo que eu posso querer Se tudo você tem melhor
+                  Pior é te perder
+                </p>
+              </div>
+              <button
+                class="list-group-item list-group-item-action"
+                onclick="toggleLyrics('song36')"
+              >
+                Luz do Desejo Exaltasamba
+              </button>
+              <div id="song36" class="d-none p-3 bg-secondary text-white">
+                <p>
+                  Apague a luz Deita ao meu lado Vem, me seduz Não é pecado Não
+                  tenha medo Tomo cuidado Fazer amor É tão gostoso Apaixonado
+                  Apague a luz Na intimidade O amor conduz Quando é verdade Faz
+                  do meu sonho Realidade Vem meu amor Apague a luz Fique à
+                  vontade Me abraça, me beija, me ama Adoro sentir seu carinho
+                  Me pega me arranha na cama Me chama de amor com jeitinho Me
+                  leva pro céu é gostoso Na mais ardente emoção Apague a luz do
+                  desejo Acesa no meu coração Me abraça, me beija, me ama Adoro
+                  sentir seu carinho Me pega me arranha na cama Me chama de amor
+                  com jeitinho Me leva pro céu é gostoso Na mais ardente emoção
+                  Apague a luz do desejo Acesa no meu coração Apague a luz Deita
+                  ao meu lado Vem, me seduz Não é pecado Não tenha medo Tomo
+                  cuidado Fazer amor É tão gostoso Apaixonado Me abraça, me
+                  beija, me ama Adoro sentir seu carinho Me pega me arranha na
+                  cama Me chama de amor com jeitinho Me leva pro céu é gostoso
+                  Na mais ardente emoção Apague a luz do desejo Acesa no meu
+                  coração Me abraça, me beija, me ama Adoro sentir seu carinho
+                  Me pega me arranha na cama Me chama de amor com jeitinho Me
+                  leva pro céu é gostoso Na mais ardente emoção Apague a luz do
+                  desejo Acesa no meu coração Me abraça, me beija, me ama Adoro
+                  sentir seu carinho Me pega me arranha na cama Me chama de amor
+                  com jeitinho Me leva pro céu é gostoso Na mais ardente emoção
+                  Apague a luz do desejo Acesa no meu coração
+                </p>
+              </div>
+              <button
+                class="list-group-item list-group-item-action"
+                onclick="toggleLyrics('song37')"
+              >
+                Do Fundo Do Nosso Quintal Jorge Aragão
+              </button>
+              <div id="song37" class="d-none p-3 bg-secondary text-white">
+                <p>
+                  Mais um pouco e vai clarear Nos encontraremos outra vez Com
+                  certeza nada apagará Esse brilho de vocês O carinho dedicado a
+                  nós Derramamos pela nossa voz Cantando alegria de não estarmos
+                  sós Mais um pouco e vai clarear (Ê vai clarear) Nos
+                  encontraremos outra vez Com certeza nada apagará Esse brilho
+                  de vocês O carinho dedicado a nós Derramamos pela nossa voz
+                  Cantando alegria de não estarmos sós Boa noite Pra quem se
+                  encontrou no amor Boa noite Pra quem não desencantou Boa noite
+                  Pra quem veio só sambar Boa noite Pra quem diz no pé e na
+                  palma da mão Boa noite Pra quem só sentiu saudade afinal
+                  Obrigado do fundo do nosso quintal Mais um pouco e vai clarear
+                  (Ê vai clarear) Nos encontraremos outra vez Com certeza nada
+                  apagará Esse brilho de vocês O carinho dedicado a nós
+                  Derramamos pela nossa voz Cantando alegria de não estarmos sós
+                  Boa noite boa noite Pra quem se encontrou no amor Boa noite
+                  boa noite Pra quem não desencantou Boa noite boa noite Pra
+                  quem veio só sambar Boa noite boa noite Pra quem diz no pé e
+                  na palma da mão Boa noite boa noite Pra quem só sentiu saudade
+                  afinal Obrigado do fundo do nosso quintal Boa noite boa noite
+                  Pra quem se encontrou no amor Boa noite boa noite Pra quem não
+                  desencantou Boa noite boa noite Pra quem veio só sambar Pra
+                  quem diz no pé e na palma da mão Pra quem só sentiu saudade
+                  afinal Obrigado do fundo do nosso quintal Obrigado do fundo do
+                  nosso quintal Obrigado do fundo do nosso quintal Obrigado do
+                  fundo do nosso quintal Obrigado do fundo do nosso quintal
+                  Obrigado do fundo do nosso quintal Obrigado do fundo do nosso
+                  quintal Mais um pouco vai clarear
+                </p>
+              </div>
+              <button
+                class="list-group-item list-group-item-action"
+                onclick="toggleLyrics('song38')"
+              >
+                Conselho Almir Guineto
+              </button>
+              <div id="song38" class="d-none p-3 bg-secondary text-white">
+                <p>
+                  Deixe de lado esse baixo astral Erga a cabeça, enfrente o mal
+                  Que agindo assim será vital Para o seu coração É que em cada
+                  experiência Se aprende uma lição Eu já sofri por amar assim Me
+                  dediquei, mas foi tudo em vão Pra que se lamentar Se em sua
+                  vida pode encontrar Quem te ame com toda força e ardor? Assim
+                  sucumbirá a dor (Tem que lutar) Tem que lutar, não se abater
+                  Só se entregar a quem te merecer Não estou dando, nem vendendo
+                  Como o ditado diz O meu conselho é pra te ver feliz (Tem que
+                  lutar) Tem que lutar, não se abater Só se entregar a quem te
+                  merecer Não estou dando, nem vendendo Como o ditado diz O meu
+                  conselho é pra te ver feliz Deixe de lado esse baixo astral
+                  Erga a cabeça, enfrente o mal Que agindo assim será vital Para
+                  o seu coração É que em cada experiência Se aprende uma lição
+                  Eu já sofri por amar assim Me dediquei, mas foi tudo em vão
+                  Pra que se lamentar Se em sua vida pode encontrar Quem te ame
+                  com toda força e ardor? Assim sucumbirá a dor (Tem que lutar)
+                  Tem que lutar, não se abater Só se entregar a quem te merecer
+                  Não estou dando, nem vendendo Como o ditado diz O meu conselho
+                  é pra te ver feliz (Tem que lutar) Tem que lutar, não se
+                  abater Só se entregar a quem te merecer Não estou dando, nem
+                  vendendo Como o ditado diz O meu conselho é pra te ver feliz
+                </p>
+              </div>
+
+              <button
+                class="list-group-item list-group-item-action"
+                onclick="toggleLyrics('song39')"
+              >
+                Insensato Destino Almir Guineto
+              </button>
+              <div id="song39" class="d-none p-3 bg-secondary text-white">
+                <p>
+                  Oh, insensato destino pra que Tanta desilusão no meu viver? Eu
+                  quero apenas ser feliz Ao menos uma vez E conseguir o acalanto
+                  da paixão. Fui desprezado e magoado Por alguém que abordou meu
+                  coração. Fui desprezado e magoado Por alguém que abordou meu
+                  coração. Destino, por que fazes assim? Tenha pena de mim! Veja
+                  bem, não mereço sofrer. Quero apenas um dia poder Viver num
+                  mar de felicidade. Com alguém que me ame de verdade.
+                </p>
+              </div>
+              <button
+                class="list-group-item list-group-item-action"
+                onclick="toggleLyrics('song40')"
+              >
+                Primeiro Beijo Art Popular
+              </button>
+              <div id="song40" class="d-none p-3 bg-secondary text-white">
+                <p>
+                  Para de tanta bobagem, só pra me esquecer Seus olhos dizem
+                  várias coisas que você não vê, não Não dá pra entender Quanta
+                  vaidade há em você O orgulho mata O sonho que nos faz viver
+                  Hoje acordei tão cedo Pensando em você Ensaiei aquelas velhas
+                  frases Pra te convencer, não Não dá pra entender Você mente
+                  mesmo, pra você O orgulho mata O sonho que nos faz viver Eu
+                  olho pra você E você não me quer mais Eu pego em suas mãos
+                  Você não quer tentar, tentar Recomeçar do abraço E do primeiro
+                  beijo Não vou desistir Nem desanimar Sei que a vida passa Se a
+                  gente parar de lutar Não vou desistir Nem desanimar Sei que a
+                  vida passa Se a gente parar de lutar Para de tanta bobagem, só
+                  pra me esquecer Seus olhos dizem várias coisas que você não
+                  vê, não Não dá pra entender Quanta vaidade há em você O
+                  orgulho mata O sonho que nos faz viver Hoje acordei tão cedo
+                  Pensando em você Ensaiei aquelas velhas frases Pra te
+                  convencer, não Não dá pra entender Você mente mesmo, pra você
+                  O orgulho mata O sonho que nos faz viver Eu olho pra você E
+                  você não me quer mais Eu pego em suas mãos Você não quer
+                  tentar, tentar Recomeçar do abraço E do primeiro beijo Não vou
+                  desistir Nem desanimar Sei que a vida passa Se a gente parar
+                  de lutar Não vou desistir Nem desanimar Sei que a vida passa
+                  Se a gente parar de lutar Não vou desistir Nem desanimar Sei
+                  que a vida passa Se a gente parar de lutar Não vou desistir
+                  Nem desanimar Sei que a vida passa Se a gente parar de lutar
+                </p>
+              </div>
             </div>
-        </header>
-        <!-- Musicas -->  
-        <section class="projects-section bg-light pt-3" id="musicas">
-            <div class="container px-4 px-lg-5">
-                <!-- Featured Project Row-->
-                <div class="row gx-0 mb-4 mb-lg-5 align-items-center">
-                    <div class="col-xl-8 col-lg-7"></div>
-                    <div class="col-xl-4 col-lg-5">
-                        <h2 class="text-center"><strong>Repertorio das músicas</strong></h2>
-                        <div class="mb-3">
-                            <input type="text" id="searchInput" class="form-control" placeholder="Buscar música..." onkeyup="searchSongs()">
-                        </div>
-                        <div class="list-group">
-                            <button class="list-group-item list-group-item-action" onclick="toggleLyrics('song1')">Insensato Destino - Almir Guineto</button>
-                            <div id="song1" class="d-none p-3 bg-secondary text-white ">
-                               <p > 
-                                Ó insensato destino pra que                                
-                                Tanta desilusão no meu viver                                
-                                Eu quero apenas ser feliz                               
-                                Ao menos uma vez                                
-                                E conseguir o acalanto da paixão                                
-                                Fui desprezado e magoado                                 
-                                Por alguém que abordou... meu coração                                
-                                Fui desprezado e magoado                                 
-                                Por alguém que abordou... meu coração                                
-                                Destino porque fazes assim                                
-                                Tenha pena de mim                               
-                                Veja bem não mereço sofrer                              
-                                Quero apenas um dia poder                                
-                                Viver num mar de felicidade                                
-                                Com alguém que me ame de verdade, ô destino                              
-                                Destino porque fazes assim                                
-                                Tenha pena de mim                                
-                                Veja bem não mereço sofrer                              
-                                Quero apenas um dia poder                                
-                                Viver num mar de felicidade                               
-                                Com alguém que me ame de verdade                               
-                                Com alguém que me ame de verdade
-                            </p>
-                            </div>
-                
-                            <button class="list-group-item list-group-item-action" onclick="toggleLyrics('song2')">Eternamente Feliz - Art Popular</button>
-                            <div id="song2" class="d-none p-3 bg-secondary text-white">
-                                <p>
-                                    Quando você passa eu só vejo você
-                                    Se a lua brilha em seu rosto sou eu
-                                    Seu pretendente
-                                    
-                                    Se as subidas não te cansam sou eu
-                                    Que te carrego sem você perceber
-                                    Constantemente
-                                    
-                                    Eu te mostro a verdade do mundo
-                                    Mas você não é capaz de aceitar
-                                    A felicidade
-                                    Eu sei vai te tocar a luz do amor
-                                    
-                                    Mas se a vida te der alguém melhor que eu
-                                    E se o amor vencer todos os preconceitos
-                                    Que você seja feliz, feliz
-                                    Seja Feliz
-                                    Eternamentee  
-                                </p>
-                            </div>
-                
-                            <button class="list-group-item list-group-item-action" onclick="toggleLyrics('song3')">Ôa Ôa, Canção do Amor - Art Popular</button>
-                            <div id="song3" class="d-none p-3 bg-secondary text-white">
-                                <p>
-                                    De repente deu uma vontade de te olhar
-                                    Admirar
-                                    Isto é o amor
-                                    
-                                    A gente pensa que isso tudo pode acabar
-                                    Sorte ou azar
-                                    Isto é amor
-                                    
-                                    Ouvir uma linda canção só para relembrar
-                                    Que com você mulher, bom é amar
-                                    Que com você mulher, bom é amar ôaô
-                                    
-                                    Ôa ôa
-                                    Ôa ô
-                                    Ôa ôa
-                                    Ôa ô
-                                    
-                                    O seu rosto à imensidão
-                                    O vento a soprar
-                                    E sentir que a emoção
-                                    Vaga pelo ar
-                                    
-                                    Vem, vem, vem desvendar
-                                    Vem, vem, vem desvendar
-                                    Alma florescer
-                                    Viver é sonhar ôaô
-                                </p>
-                            </div>
-                
-                            <button class="list-group-item list-group-item-action" onclick="toggleLyrics('song4')">Falando Segredo - Art Popular </button>
-                            <div id="song4" class="d-none p-3 bg-secondary text-white">
-                                <p>
-                                    Te vejo, me olhando, com um jeitinho diferente de quem quer ficar a me provocar.
-                                    Falando segredos pra amiga ao seu lado que é pra eu notar...Ah!
-                                    
-                                    Quem dera eu pudesse ficar com você, deixa o show acabar.
-                                    Me manda um recado que eu quero seu beijo.
-                                    Não dá mais pra aguentar.
-                                    Quem dera eu pudesse ficar com você, deixa o show acabar.
-                                    Me manda um recado que eu quero o seu beijo.
-                                    Não dá mais pra aguentar.
-                                    
-                                    Então vem se eu ganho um beijo seu eu vou até o céu. Ai, ai, ai, ai, ai, ai, ai, ai, ai aaaai.
-                                    Assim eu não aguento mais...[2x]
-                                </p>
-                            </div>
-                
-                            <button class="list-group-item list-group-item-action" onclick="toggleLyrics('song5')">Utopia - Art Popular</button>
-                            <div id="song5" class="d-none p-3 bg-secondary text-white">
-                                <p>
-                                    UtopiaPra se dizer
-                                    Que a emoção
-                                    Vem depois da razão
-                                    Faz o coração
-                                    Morrer de paixão
-                                    Renunciar alguém
-                                    Só traz a dor
-                                    
-                                    Soma da solidão
-                                    Se torna mais veloz
-                                    Pro sorriso apagar
-                                    Minha mente tornar
-                                    Abismo de criar
-                                    Amar amando amor assim
-                                    Sei lá!
-                                    
-                                    Poder dizer que o amor
-                                    É uma certeza
-                                    Realidade enfim
-                                    Se perde no canto calado
-                                    A procura de outro
-                                    Por fim
-                                    
-                                    É esperar por alguém
-                                    Que não vem
-                                    E sentir-se como outro gen
-                                    Será utopia ou realidade
-                                    Querer estar com alguém
-                                    Que se ame assim
-                                    
-                                    Poder dizer que o amor
-                                    É uma certeza
-                                    Realidade enfim
-                                    Se perde no canto calado
-                                    A procura de outro
-                                    Por fim
-                                    
-                                    É esperar por alguém
-                                    Que não vem
-                                    E sentir-se como outro gen
-                                    Será Utopia ou realidade
-                                    Querer estar com alguém
-                                    Que se ame assim
-                                </p>
-                            </div>
-                
-                            <button class="list-group-item list-group-item-action" onclick="toggleLyrics('song6')">Papel de Pão - Jorge Aragão </button>
-                            <div id="song6" class="d-none p-3 bg-secondary text-white">
-                                <p>
-                                    Eu nem sei dizer o que senti
-                                    Quando eu acordei e não lhe vi
-                                    Confesso que chorei
-                                    Não suportei a dor
-                                    É doloroso se perder um grande amor
-                                    
-                                    Mais alucinado eu fiquei
-                                    Quando li o bilhete que encontrei
-                                    Estava escrito num papel de pão
-                                    Foi o que arrasou meu coração
-                                    
-                                    Ainda me lembro bem
-                                    Estava escrito assim
-                                    Não me procure nosso amor
-                                    Chegou ao fim, ao fim
-                                </p>
-                            </div>
-                
-                            <button class="list-group-item list-group-item-action" onclick="toggleLyrics('song7')">Farol das Estrelas - Belo</button>
-                            <div id="song7" class="d-none p-3 bg-secondary text-white">
-                                <p>
-                                    Os teus olhos refletem nos meus
-                                    O farol das estrelas
-                                    Te procuro no azul dos meus sonhos
-                                    Para não perdê-la
-                                    Nossa cama é um porto de amor
-                                    Onde espero feliz pra revê-la
-                                    Toda linda e cheia de luz
-                                    Com o teu corpo de estrela
-                                    
-                                    É tão bonito o amor que a gente faz
-                                    Tem tanta cor, tem tanta paz
-                                    Nos braços da estrela cadente
-                                    Como adolescente eu me dei
-                                    Se o brilho da nossa verdade
-                                    Durar para a eternidade
-                                    A estrela da felicidade encontrei
-                                    
-                                    A primeira vez que eu te beijei
-                                    No céu da Cidade de Neon
-                                    Pulei nos teus braços, me joguei
-                                    Voei, voei
-                                    Voei de prazer no céu de anil
-                                    Contigo ao meu lado eu vou voar
-                                    Em qualquer lugar desse Brasil
-                                    Te amar, te amar
-                                    
-                                    Os teus olhos refletem nos meus
-                                    O farol das estrelas
-                                    Te procuro no azul dos meus sonhos
-                                    Para não perdê-la
-                                    Nossa cama é um porto de amor
-                                    Onde espero feliz pra revê-la
-                                    Toda linda e cheia de luz
-                                    Com o teu corpo de estrela
-                                    
-                                    É tão bonito o amor que a gente faz
-                                    Tem tanta cor, tem tanta paz
-                                    Nos braços da estrela cadente
-                                    Como adolescente eu me dei
-                                    Se o brilho da nossa verdade
-                                    Durar para a eternidade
-                                    A estrela da felicidade encontrei
-                                    
-                                    A primeira vez que eu te beijei
-                                    No céu da Cidade de Neon
-                                    Pulei nos teus braços, me joguei
-                                    Voei, voei
-                                    Voei de prazer no céu de anil
-                                    Contigo ao meu lado eu vou voar
-                                    Em qualquer lugar desse Brasil
-                                    Te amar, te amar
-                                    
-                                    A primeira vez que eu te beijei (que eu te beijei)
-                                    No céu da Cidade de Neon
-                                    Pulei nos teus braços, me joguei
-                                    Voei, voei
-                                    Voei de prazer no céu de anil (no céu de anil)
-                                    Contigo ao meu lado eu vou voar
-                                    Em qualquer lugar desse Brasil
-                                    Te amar, te amar
-                                    
-                                    A primeira vez que eu te beijei (que eu te beijei)
-                                    No céu da Cidade de Neon (de Neon)
-                                    Pulei nos teus braços, me joguei
-                                    Voei, voei
-                                </p>
-                            </div>
-                
-                            <button class="list-group-item list-group-item-action" onclick="toggleLyrics('song8')">Falsa Consideração - Jorge Aragão</button>
-                            <div id="song8" class="d-none p-3 bg-secondary text-white">
-                                <p>
-                                    Agora eu sei
-                                    Que o amor que você prometeu
-                                    Não foi igual ao que você me deu
-                                    Era mentira o que você jurou
-                                    
-                                    Mas não faz mal
-                                    Eu aprendi que não se deve crer
-                                    Em tudo aquilo que alguém nos diz
-                                    Num momento de prazer ou de amor
-                                    
-                                    Mas tudo bem
-                                    Eu sei que um dia vai e outro vem
-                                    Você ainda há de encontrar alguém
-                                    Pra lhe fazer o que você me fez
-                                    
-                                    E aí
-                                    Na hora do sufoco sei que você vai me procurar
-                                    Com a mesma conversa que um dia me fez apaixonar
-                                    Por alguém de uma falsa consideração
-                                    
-                                    E aí
-                                    Você vai perceber que eu estou numa boa
-                                    Que durante algum tempo fiquei sem ninguém
-                                    Mas há males na vida que vêm para o bem
-                                    
-                                    Agora eu sei
-                                    Que o amor que você prometeu
-                                    Não foi igual ao que você me deu
-                                    Era mentira o que você jurou
-                                    
-                                    Mas não faz mal
-                                    Eu aprendi que não se deve crer
-                                    Em tudo aquilo que alguém nos diz
-                                    Num momento de prazer ou de amor
-                                    
-                                    Mas tudo bem
-                                    Eu sei que um dia vai e outro vem
-                                    Você ainda há de encontrar alguém
-                                    Pra lhe fazer o que você me fez
-                                    
-                                    E aí
-                                    Na hora do sufoco sei que você vai me procurar
-                                    Com a mesma conversa que um dia me fez apaixonar
-                                    Por alguém de uma falsa consideração
-                                    
-                                    E aí
-                                    Você vai perceber que eu estou numa boa
-                                    Que durante algum tempo fiquei sem ninguém
-                                    Mas há males na vida que vêm para o bem
-                                    
-                                    E aí
-                                    Você vai perceber que eu estou numa boa
-                                    Que durante algum tempo fiquei sem ninguém
-                                    Mas há males na vida que vêm para o bem
-                                </p>
-                            </div>
-                
-                            <button class="list-group-item list-group-item-action" onclick="toggleLyrics('song9')">Malandro - Jorge Aragão</button>
-                            <div id="song9" class="d-none p-3 bg-secondary text-white">
-                                <p>
-                                    Malandro
-                                    Eu ando querendo falar com você
-                                    Você tá sabendo que o Zeca morreu?
-                                    Por causa de brigas que teve com a lei
-                                    Malandro
-                                    Eu sei que você nem se liga pro fato
-                                    De ser capoeira, moleque mulato
-                                    Perdido no mundo, morrendo de amor
-                                    
-                                    Malandro
-                                    Sou eu que te falo em nome daquela
-                                    Que na passarela é porta-estandarte
-                                    E lá na favela tem nome de flor
-                                    Malandro
-                                    Só peço favor de que tenhas cuidado
-                                    As coisas não andam tão bem pro teu lado
-                                    Assim você mata a Rosinha de dor
-                                    
-                                    Malandro
-                                </p>
-                            </div>
-                
-                            <button class="list-group-item list-group-item-action" onclick="toggleLyrics('song10')">Cartão Postal - Exaltasamba</button>
-                            <div id="song10" class="d-none p-3 bg-secondary text-white">
-                                <p>
-                                    Como sempre distraída
-                                    Te filmei, você não viu
-                                    É a coisa mais bonita
-                                    O seu corpo de perfil
-                                    
-                                    Pode parecer bobagem
-                                    Um impulso infantil
-                                    Meu amor, não é chantagem
-                                    Mas você me seduziu
-                                    
-                                    Te proponho, amor
-                                    Um trato, que tal se render?
-                                    Eu te dou o seu retrato
-                                    Mas quero você
-                                    
-                                    Você na foto toda nua
-                                    Num banho de Lua
-                                    Meu cartão postal
-                                    Meu corpo deu sinal, deu sinal, deu sinal
-                                    
-                                    O meu desejo continua
-                                    Desejando a sua
-                                    Boca sensual
-                                    Meu sonho real
-                                    
-                                    Você na foto toda nua
-                                    Num banho de Lua
-                                    Meu cartão postal
-                                    Meu corpo deu sinal, deu sinal, deu sinal
-                                    
-                                    O meu desejo continua
-                                    Desejando a sua
-                                    Boca sensual
-                                    Meu sonho real
-                                    
-                                    Como sempre distraída
-                                    Te filmei, você não viu
-                                    É a coisa mais bonita
-                                    O seu corpo de perfil
-                                    
-                                    Pode parecer bobagem
-                                    Um impulso infantil
-                                    Meu amor, não é chantagem
-                                    Mas você me seduziu
-                                    
-                                    Te proponho, amor
-                                    Um trato, que tal se render?
-                                    Eu te dou o seu retrato
-                                    Mas quero você
-                                    
-                                    Você na foto toda nua
-                                    Num banho de Lua
-                                    Meu cartão postal
-                                    Meu corpo deu sinal, deu sinal, deu sinal
-                                    
-                                    O meu desejo continua
-                                    Desejando a sua
-                                    Boca sensual
-                                    Meu sonho real
-                                    
-                                    Você na foto toda nua
-                                    Num banho de Lua
-                                    Meu cartão postal
-                                    Meu corpo deu sinal, deu sinal, deu sinal
-                                    
-                                    O meu desejo continua
-                                    Desejando a sua
-                                    Boca sensual
-                                    Meu sonho real
-                                </p>
-                            </div>
-                        </div>
-                    </div>
-                </div>               
-            </div>
-        </section>
-       
-        
-        
-        <!-- Footer-->
-        <footer class="footer bg-black small text-center text-white-50"><div class="container px-4 px-lg-5">Copyright &copy; GARAGEM DO RALPHAO - 2025</div></footer>
-        <!-- Bootstrap core JS-->
-        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
-        <!-- Core theme JS-->
-        <script src="js/scripts.js"></script>
-        <!-- * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *-->
-        <!-- * *                               SB Forms JS                               * *-->
-        <!-- * * Activate your form at https://startbootstrap.com/solution/contact-forms * *-->
-        <!-- * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *-->
-        <script src="https://cdn.startbootstrap.com/sb-forms-latest.js"></script>
-    </body>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer-->
+    <footer class="footer bg-black small text-center text-white-50">
+      <div class="container px-4 px-lg-5">
+        Copyright &copy; GARAGEM DO RALPHAO - 2025
+      </div>
+    </footer>
+    <!-- Bootstrap core JS-->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- Core theme JS-->
+    <script src="js/scripts.js"></script>
+    <!-- * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *-->
+    <!-- * *                               SB Forms JS                               * *-->
+    <!-- * * Activate your form at https://startbootstrap.com/solution/contact-forms * *-->
+    <!-- * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *-->
+    <script src="https://cdn.startbootstrap.com/sb-forms-latest.js"></script>
+  </body>
 </html>
